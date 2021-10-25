@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    background-color: #183a4a;
+    text-align: center;
+
+}
+
+#title{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    margin: 50px auto;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.boxes .box{
+    height: 110px;
+    width: 110px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d88ae;
+
+}
