@@ -37,3 +37,11 @@ body{
     background-color: #3d88ae;
 
 }
+
+.fizz{
+    background-color: darkcyan;
+}
+
+.buzz{
+    background-color: red;
+}
