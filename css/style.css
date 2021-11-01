@@ -38,10 +38,14 @@ body{
 
 }
 
-.Fizz{
-    background-color: darkcyan;
+.box-fizz{
+    background-color: #0bd6a1;
 }
 
-.Buzz{
-    background-color: red;
+.box-buzz{
+    background-color: #ffd166;
+}
+
+.box-fizzbuzz{
+    background-color: #f0466f;
 }

@@ -1,25 +1,35 @@
-//container boxes
+//genera boxes
 
 const boxes = document.querySelector('.boxes');
 
-//genera boxes
+//print dei box
 
-for (let i = 1; i <= 100; i++){
-    boxes.innerHTML += `<div class="box box-${i}"${i}></div>`;
-    if ((i % 3 == 0) && (i % 5 == 0))
-    console.log(`FizzBuzz`)
+for (let i = 0; i <= 100; i++){
     
+    let element ='';
+
+    if (i % 3 == 0 && i % 5 == 0) {
+        element = `<div class="box box-fizzbuzz">fizzbuz</div>`;
+    }
 
     else if (i % 3 == 0) {
-        console.log(`Fizz`);
+        element = `<div class="box box-fizz">fizz</div>`;
     }
 
     else if (i % 5 == 0) {
-        console.log(`Buzz`);
-
+        element = `<div class="box box-buzz">buzz</div>`;
     }
 
+    else {
+        boxes = `<div class="box "> ${i} </div>`;
+    }
+
+    boxes.innerHTML += element;
+
+
+
 }
+
 
 
 
