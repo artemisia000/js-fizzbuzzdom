@@ -24,7 +24,6 @@ body{
     flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
-
 }
 
 .boxes .box{
@@ -34,8 +33,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3d88ae;
+    
+}
 
+.box-null{
+    background-color: #3d88ae;
 }
 
 .box-fizz{

@@ -2,33 +2,64 @@
 
 const boxes = document.querySelector('.boxes');
 
-//print dei box
 
-for (let i = 0; i <= 100; i++){
-    
-    let element ='';
-
+for (let i = 0; i <= 100; i++) {
+ 
     if (i % 3 == 0 && i % 5 == 0) {
-        element = `<div class="box box-fizzbuzz">fizzbuz</div>`;
-    }
+                square = `<div class="box box-fizzbuzz">fizzbuz</div>`;
+            }
+        
+            else if (i % 3 == 0) {
+                square = `<div class="box box-fizz">fizz</div>`;
+            }
+        
+            else if (i % 5 == 0) {
+                square = `<div class="box box-buzz">buzz</div>`;
+            }
+        
+            else {
+                square = `<div class="box box-null"> ${i} </div>`;
+            }
 
-    else if (i % 3 == 0) {
-        element = `<div class="box box-fizz">fizz</div>`;
-    }
-
-    else if (i % 5 == 0) {
-        element = `<div class="box box-buzz">buzz</div>`;
-    }
-
-    else {
-        boxes = `<div class="box "> ${i} </div>`;
-    }
-
-    boxes.innerHTML += element;
-
-
-
+            boxes.innerHTML += square;
+            console.log(square);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// //print dei box
+
+// for (let i = 0; i <= 100; i++){
+    
+
+//     if (i % 3 == 0 && i % 5 == 0) {
+//         square = `<div class="box box-fizzbuzz">fizzbuz</div>`;
+//     }
+
+//     else if (i % 3 == 0) {
+//         square = `<div class="box box-fizz">fizz</div>`;
+//     }
+
+//     else if (i % 5 == 0) {
+//         square = `<div class="box box-buzz">buzz</div>`;
+//     }
+
+//     else {
+//         square = `<div class="box "> ${i} </div>`;
+//     }
+
+//     boxes.innerHTML += element;
+
+// }
 
 
 
